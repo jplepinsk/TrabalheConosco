@@ -8,7 +8,7 @@ import mysql.connector
 conexaoDB = mysql.connector.connect(
     host="localhost",
     user="root",
-    password="root",
+    password="aluno",
     database="trabalheconosco"
 )
 
