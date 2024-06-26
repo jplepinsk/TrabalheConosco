@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/styles.css">
+    <title>Trabalhe Conosco</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="/">
+                <img src="../static/images/logo.png">
+            </a>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/sobre">Sobre</a></li>
+                <li><a href="/contato">Contato</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+<main>
+    {% block conteudo %}
+    {% endblock %}
+</main>
+
+<footer>
+    <div class="boxrodape">
+        <a href="/">
+            <img src="../static/images/logo.png">
+        </a>
+    </div>
+    <div class="boxrodape">
+        <p>Avenida dos contratados, 100 - Bairro RH - Itapeva/SP</p>
+    </div>
+    <div class="boxrodape" style="text-align: center;">
+        <p>Contato: (15)9999-0000</p>
+        <a style="color: white;"  href="/login">Acesso ao administrador</a>
+    </div>
+
+</footer>
+    
+</body>
+</html>

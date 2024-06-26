@@ -1,0 +1,13 @@
+/* PROJETO FLASK PYTHON - TRABALHE CONOSCO */
+
+CREATE DATABASE trabalheconosco;
+
+USE trabalheconosco;
+
+CREATE TABLE Vaga (
+    idVaga INT PRIMARY KEY AUTO_INCREMENT,
+    cargo VARCHAR(100) NOT NULL,
+    descricao TEXT NOT NULL,
+    local VARCHAR(50) NOT NULL,
+    salario DECIMAL(10,2) NOT NULL
+);

@@ -1,0 +1,31 @@
+{% extends 'modelo.html' %}
+{% block conteudo %}
+
+<div class="mkt">
+    <div class="frase">
+        <h1>Busque sua vaga aqui.</h1>
+    </div>
+</div>
+
+<div class="area_vagas">
+    <h1> Oportunidade de Emprego</h1>
+    <div id="vagas">
+        {% if not (vagas) %}
+        <h2>Não há vagas cadastradas</h2>
+        {% else %}
+        {% for vaga in vagas %}
+
+        <a href="/detalhes/{{ vaga[0] }}"> <!-- FAZ OS DETALHES DA VAGA IREM PRA OUTRA PAGINA -->
+
+            <div class="boxvagas">
+                <h3>{{ vaga[1] }}</h3>
+                <p>Local: {{ vaga[3] }}</p>
+            </div>
+        </a>
+
+        {% endfor %}
+
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

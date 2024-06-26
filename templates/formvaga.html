@@ -1,0 +1,22 @@
+{% extends 'modelo.html' %}
+{% block conteudo %}
+<div id="novavaga">
+    <form action="/cadastrar" method="post">
+        <h2>Cadastro de nova vaga de emprego</h2>
+
+        <label for="cargo">Cargo:</label><br>
+        <input class="iptCadastrar"type="text" name="cargo" id="cargo" required><br><br>
+
+        <label for="local">Local de vaga:</label><br>
+        <input class="iptCadastrar"type="text" name="local" id="local" required><br><br>
+
+        <label for="salario">Salário:</label><br>
+        <input class="iptCadastrar" type="number" min="0" max="10000" step="100" name="salario" id="salario" required><br><br>
+
+        <label>Descreva mais informações da vaga:</label><br>
+        <textarea name="descricao" id="descricao" cols="60" rows="10" required style="resize: none;"></textarea><br>
+
+        <input class="btnCadastrar" type="submit" value="CADASTRAR VAGA">
+    </form>
+</div>
+{% endblock %}
